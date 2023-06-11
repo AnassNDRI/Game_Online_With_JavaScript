@@ -6,4 +6,10 @@ output: {
     path: path.resolve(__dirname, "dist"), 
     filename: "bundle.js"
 },
-mode: 'development'}
+    devServer: {
+         static : path.resolve(__dirname, "dist"),
+         compress: true,
+         port:8080,
+     },
+     mode: 'development',
+};
